@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+        <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            
+                <title>Strona o kostkach Rubika</title>
+                <meta name="description" content="Strona o kostkach Rubika">
+                <meta name="keywords" content="kostka Rubika, układanie, speedcubing">
+                <meta name="author" content="Wiktor Dereń" />
+            
+                <link rel="stylesheet" href="libraries/css/bootstrap.min.css">
+                <link rel="Stylesheet" href="style.css">        <!--link do pliku css --> 
+                <link rel="Shortcut icon" href="img/proba.png" /> <!--zdjęcie zakładki--> 
+                
+            </head>
+
+<body onload="odliczanie();">
+        <div id="zegar"></div> 
+   
+
+        <header>
+                <nav class="navbar navbar-dark bg-cube navbar-expand-lg">
+        
+                    <a class="navbar-brand" href="index.html" id="center" title="Strona domowa"><img src="img/proba.png"  alt="zdjecie strony domowej" width="30" height="30" class="d-inline-block align-middle"></a>
+                         
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przycisk nawigacji">  
+                            <span class="navbar-toggler-icon"></span>
+                     </button>
+        
+                     <div class="collapse navbar-collapse" id="mainmenu">
+        
+                        <ul class="navbar-nav">
+        
+                            <li class="navbar-item">
+                                <a class="navbar-link" title="Strona o kostkach Rubika" href="index.html">Start </a>
+                            </li>
+        
+                            <li class="navbar-item">
+                                <a class="navbar-link" title="Historia kostki Rubika" href="historia.html">Historia </a>
+                            </li>
+        
+                            <li class="navbar-item">
+                                <a class="navbar-link" title="Techniki układania kostki Rubika"  href="techniki_ukladania.html"> Techniki</a>
+                            </li>
+        
+                            <li class="navbar-item">
+                                <a class="navbar-link" title="Rodzaje kostek Rubika" href="rodzaje_kostek.html"> Rodzaje</a>
+                            </li>
+        
+                            <li class="navbar-item">
+                                <a class="navbar-link" title="Ciekawostki o kostce Rubika" href="ciekawostki.html"> Ciekawostki</a>
+                            </li>
+        
+                            <li class="navbar-item dropdown">
+                                <a class="navbar-link dropdown-toggle" title="Galeria kostek Rubika" href="galeria.html" data-toggle="dropdown" role="button" aria-expanded="false" id="submenu" aria-haspopup="true"> Galeria</a>
+        
+                            <div class="dropdown-menu" aria-labelledby="submenu">
+                                <a class="dropdown-item" href="galeria.html">Galeria</a>
+                                <a class="dropdown-item" href="galeria.html#kolekcja">Moja kolekcja</a>
+                                <a class="dropdown-item" href="galeria.html#najwieksze"> Największe kostki</a>
+                                <a class="dropdown-item" href="galeria.html#zmiennoksztaltne"> Kostki zmiennokształtne</a>
+        
+                            </div>
+        
+                            </li>
+        
+                            <li class="navbar-item">
+                                <a class="navbar-link" title="Zaloguj" href="formularz.html"> Zaloguj</a>
+                            </li>
+                        </ul>
+                     </div>
+                    
+                    </nav>
+            </header>
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+    <div class="carousel-inner">
+        <h1 style="text-align: center;"> Rodzaje kostek</h1>
+        <br>
+
+        <div style="text-align: center;">
+        <a class="przycisk" class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="przycisk" class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a> 
+        </div>
+          
+          <br><br>
+
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h3> Kostki sześcienne:</h3> <br><br>
+
+                        
+                    <ul class="list-group justify-content-center">
+                        <li class="styl list-group-item-warning">2×2×2 (Rubik's Mini Cube)</li>
+                        <li class="styl list-group-item-warning">3×3×3 (oryginalna Rubik's Cube)</li>
+                        <li class="styl list-group-item-warning">4×4×4 (Rubik's Revenge)</li>
+                        <li class="styl list-group-item-warning">5×5×5 (Rubik's Professor Cube)</li>
+                        <li class="styl list-group-item-warning">6×6×6</li>
+                        <li class="styl list-group-item-warning">7×7×7</li>
+                        <li class="styl list-group-item-warning">8×8×8</li>
+                        <li class="styl list-group-item-warning">9×9×9</li>
+                        <li class="styl list-group-item-warning">10×10×10</li>
+                        <li class="styl list-group-item-warning">11×11×11</li>
+                        <li class="styl list-group-item-warning">13×13×13</li>
+                        <li class="styl list-group-item-warning">17×17×17 (nieprodukowana masowo, drukowana w 3D na zamówienie)</li>
+                        <li class="styl list-group-item-warning">Square-1</li>
+                        <li class="styl list-group-item-warning">Fisher Cube (łamigłówka skonstruowana przez Tony’ego Fishera)</li>
+                        <li class="styl list-group-item-warning">Void Cube (kostka 3x3x3 bez elementów centrowych)</li>
+                        <li class="styl list-group-item-warning">Mirror Blocks (kostka w której każdy element posiada inny kształt)</li>
+                        <li class="styl list-group-item-warning">Skewb</li>
+                        <li class="styl list-group-item-warning">Gear Cube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>                    
+
+
+                <br><br>
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h3>Kostki dwunastościenne:</h3> <br><br>
+
+
+                    <ul class="list-group">
+                        <li class="styl list-group-item-primary">Kilominx – najmniejsza z dwunastościanów</li>
+                        <li class="styl list-group-item-primary">Megaminx</li>
+                        <li class="styl list-group-item-primary">Starminx</li>
+                        <li class="styl list-group-item-primary">Gigaminx</li>
+                        <li class="styl list-group-item-primary">Teraminx</li>
+                        <li class="styl list-group-item-primary">Petaminx – największa z powszechnie dostępnych dwunastościanów, składa się z 218 elementów, a całkowita liczba kombinacji ułożeń to około 1,95×10160, czyli 19,5 sekswicyliardów</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h3>Kostki ośmiościenne :</h3> <br><br>
+
+
+                <ul class="list-group">
+                    <li class="styl list-group-item-success">Diamond</li>
+                    <li class="styl list-group-item-success">Octahedron</li>
+                    <li class="styl list-group-item-success">Rubik`s UFO</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h3>Kostki czworościenne :</h3> <br><br>
+
+
+                <ul class="list-group">
+                    <li class="styl list-group-item-dark">Pyraminx – łamigłówka w kształcie czworościanu</li>
+                    <li class="styl list-group-item-dark">etraminx – kostka w kształcie czworościanu bez wierzchołków</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h3>Kostki o innych kształtach:</h3> <br><br>
+            
+                <ul class="list-group">
+                <li class="styl list-group-item-info">Rubik's Twist – łamigłówka w kształcie węża, z której można ułożyć różne figury 3D i 2D</li>
+                <li class="styl list-group-item-info">Rubik's Magic – łamigłówka w kształcie prostokątnej płytki</li>
+                <li class="styl list-group-item-info">Clock – łamigłówka z zegarami</li>
+                <li class="styl list-group-item-info">Floppy Cube – kostka 1x3x3.</li>
+                <li class="styl list-group-item-info">1x2x2</li>
+                <li class="styl list-group-item-info">1x3x3</li>
+                <li class="styl list-group-item-info">2x2x4</li>
+                <li class="styl list-group-item-info">2x3x3</li>
+                <li class="styl list-group-item-info">2x3x4</li>
+                <li class="styl list-group-item-info">3x3x4</li>
+                <li class="styl list-group-item-info">3x3x5</li>
+                <li class="styl list-group-item-info">3x3x6</li>
+                <li class="styl list-group-item-info">3x3x7</li>
+                <li class="styl list-group-item-info">3x3x8</li>
+                <li class="styl list-group-item-info">3x3x9</li>
+                <li class="styl list-group-item-info">3x4x5</li>
+                <li class="styl list-group-item-info">4x4x2</li>
+                <li class="styl list-group-item-info">4x4x5</li>
+                <li class="styl list-group-item-info">5x5x4</li>
+                <li class="styl list-group-item-info">Pentahedron</li>
+                </ul>
+                </div></div></div>
+        </div>
+    </div> 
+
+    <div>
+        <ol class="carousel-indicators" data-target="#carouselExampleControls">
+            <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="3"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="4"></li>
+        </ol>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="libraries/js/bootstrap.min.js"></script>
+
+<script src="libraries/js/jquery-3.4.1.js"></script>
+<script src="czas.js"> </script>
+
+</body>
+
+
+</html>

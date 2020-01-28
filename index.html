@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Strona o kostkach Rubika</title>
+    <meta name="description" content="Strona o kostkach Rubika">
+    <meta name="keywords" content="kostka Rubika, układanie, speedcubing">
+    <meta name="author" content="Wiktor Dereń" />
+
+    <link rel="stylesheet" href="libraries/css/bootstrap.min.css">
+    <link rel="Stylesheet" href="style.css">     <!--link do pliku css --> 
+    <link rel="Shortcut icon" href="img/proba.png" /> <!--zdjęcie zakładki--> 
+    
+
+</head>
+
+<body onload="odliczanie();">
+    	<div id="zegar"></div> 
+ 
+    <header>
+        <nav class="navbar navbar-dark bg-cube navbar-expand-lg container-fluid">
+
+            <a class="navbar-brand" href="index.html" id="center" title="Strona domowa"><img src="img/proba.png"  alt="zdjecie strony domowej" width="30" height="30" class="d-inline-block align-middle"></a>
+                 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przycisk nawigacji">  
+                    <span class="navbar-toggler-icon"></span>
+             </button>
+
+             <div class="collapse navbar-collapse" id="mainmenu">
+
+                <ul class="navbar-nav col-12">
+
+                    <li class="navbar-item">
+                        <a class="navbar-link" title="Strona o kostkach Rubika" href="index.html">Start </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a class="navbar-link" title="Historia kostki Rubika" href="historia.html">Historia </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a class="navbar-link" title="Techniki układania kostki Rubika"  href="techniki_ukladania.html"> Techniki </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a class="navbar-link" title="Rodzaje kostek Rubika" href="rodzaje_kostek.html"> Rodzaje </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a class="navbar-link" title="Ciekawostki o kostce Rubika" href="ciekawostki.html"> Ciekawostki</a>
+                    </li>
+
+                    <li class="navbar-item dropdown">
+                        <a class="navbar-link dropdown-toggle" title="Galeria kostek Rubika" href="galeria.html" data-toggle="dropdown" role="button" aria-expanded="false" id="submenu" aria-haspopup="true"> Galeria</a>
+
+                    <div class="dropdown-menu" aria-labelledby="submenu">
+                           <a class="dropdown-item" href="galeria.html">Galeria</a>
+                           <a class="dropdown-item" href="galeria.html#kolekcja">Moja kolekcja</a>
+                           <a class="dropdown-item" href="galeria.html#najwieksze"> Największe kostki</a>
+                           <a class="dropdown-item" href="galeria.html#zmiennoksztaltne"> Kostki zmiennokształtne</a>
+
+                    </div>
+
+                    </li>
+
+                    <li class="navbar-item">
+                        <a class="navbar-link" title="Zaloguj" href="formularz.html"> Zaloguj</a>
+                    </li>
+                </ul>
+             </div>
+            
+            </nav>
+    </header>
+
+    <br><br>
+
+    <section id="animacja">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1> Zasady i mechanika gry</h1>
+                </div>
+               
+            <div>
+                <br>
+                <div class="styl"> 
+                    Zabawa kostką polega na takim ułożeniu kwadratów, aby na każdej ścianie wszystkie posiadały jeden kolor. Składa się ona z 26 sześcianów i przegubu umieszczonego w środku. Przegub ten umożliwia każdej z zewnętrznych warstw kostki obrót wokół osi prostopadłej do danej warstwy i przechodzącej przez środek kostki.
+                </div>
+            </div>
+            <br><br>
+        </div>
+        <div class="text-center">
+           <h1>Znani speedcuberzy</h1>
+    
+    <div id="pobierz">
+        <button type="button" class="btn" onclick="load()">Pobierz dane z txt</button>
+    </div>
+</div>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="libraries/js/bootstrap.min.js"></script>
+    <script src="libraries/js/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#animacja").hide();
+        })
+    </script>
+
+
+    <script src="slidedown.js"></script>
+    <script src="czas.js"> </script>
+    <script src="load.js"></script>
+    
+
+</body>
+
+</html>

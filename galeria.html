@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+        <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            
+                <title>Strona o kostkach Rubika</title>
+                <meta name="description" content="Strona o kostkach Rubika">
+                <meta name="keywords" content="kostka Rubika, układanie, speedcubing">
+                <meta name="author" content="Wiktor Dereń" />
+            
+                <link rel="stylesheet" href="libraries/css/bootstrap.min.css">
+                <link rel="Stylesheet" href="style.css">        <!--link do pliku css --> 
+                <link rel="Shortcut icon" href="img/proba.png" /> <!--zdjęcie zakładki--> 
+
+            </head>
+
+<body onload="odliczanie();">
+        <div id="zegar"></div> 
+
+        <header>
+                <nav class="navbar navbar-dark bg-cube navbar-expand-lg">
+        
+                    <a class="navbar-brand" href="index.html" id="center" title="Strona domowa"><img src="img/proba.png"  alt="zdjecie strony domowej" width="30" height="30" class="d-inline-block align-middle"></a>
+                         
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przycisk nawigacji">  
+                            <span class="navbar-toggler-icon"></span>
+                     </button>
+        
+                     <div class="collapse navbar-collapse" id="mainmenu">
+        
+                        <ul class="navbar-nav">
+        
+                            <li class="navbar-item">
+                                <a class="navbar-link" title="Strona o kostkach Rubika" href="index.html">Start </a>
+                            </li>
+        
+                            <li class="navbar-item">
+                                <a class="navbar-link" title="Historia kostki Rubika" href="historia.html">Historia </a>
+                            </li>
+        
+                            <li class="navbar-item">
+                                <a class="navbar-link" title="Techniki układania kostki Rubika"  href="techniki_ukladania.html"> Techniki</a>
+                            </li>
+        
+                            <li class="navbar-item">
+                                <a class="navbar-link" title="Rodzaje kostek Rubika" href="rodzaje_kostek.html"> Rodzaje </a>
+                            </li>
+        
+                            <li class="navbar-item">
+                                <a class="navbar-link" title="Ciekawostki o kostce Rubika" href="ciekawostki.html"> Ciekawostki</a>
+                            </li>
+        
+                            <li class="navbar-item dropdown">
+                                <a class="navbar-link dropdown-toggle" title="Galeria kostek Rubika" href="galeria.html" data-toggle="dropdown" role="button" aria-expanded="false" id="submenu" aria-haspopup="true"> Galeria</a>
+        
+                            <div class="dropdown-menu" aria-labelledby="submenu">
+                                <a class="dropdown-item" href="galeria.html">Galeria</a>
+                                <a class="dropdown-item" href="galeria.html#kolekcja">Moja kolekcja</a>
+                                <a class="dropdown-item" href="galeria.html#najwieksze"> Największe kostki</a>
+                                <a class="dropdown-item" href="galeria.html#zmiennoksztaltne"> Kostki zmiennokształtne</a>
+        
+                            </div>
+        
+                            </li>
+        
+                            <li class="navbar-item">
+                                <a class="navbar-link" title="Zaloguj" href="formularz.html"> Zaloguj</a>
+                            </li>
+                        </ul>
+                     </div>
+                    
+                    </nav>
+            </header>
+
+            <br><br><br>
+
+            <h1 class="text-center">Galeria zdjęć</h1>
+
+            <br><br><br>
+<section>
+    
+
+    <div class="row" >
+        <figure  class="col-md-12 text-center" id="figura_kolekcja">
+            <img src="img/kolekcja.jpg" alt="kolekcja" width="1600" height="900" id="kolekcja">
+                <figcaption class="styl">
+                    <div>
+                        <a href="img/kolekcja.jpg" target="_blank">
+                            <button type="button" class="btn" title="Powiększ">Moja kolekcja</button></a> 
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+
+        <br><br><br><br><br>
+
+        <h1 class="text-center" id="najwieksze">Największe kostki</h1>
+        <br><br><br>
+    <div class="row" style="width:100%">
+        <figure  class="col-md-4">
+            <img src="img/9x9x9.png" alt="Największa seryjna kostka" width="400" height="400" id="najwieksza">
+                <figcaption class="styl"> Największa seryjnie produkowana kostka Rubika (9x9x9) <br>
+                    <div style="text-align:center;"> 
+                        <a href="https://pl.aliexpress.com/item/32839514122.html" target="_blank"> 
+                            <button type="button" class="btn">Źródło</button></a>
+                    </div>
+                </figcaption>
+
+        </figure>
+
+        <figure class="col-md-4">
+            <img src="img/17x17x17.png" alt="Największa sześcienna kostka" width="400" height="400" id="drukowana">
+                <figcaption class="styl">Kostka 17x17x17 jest drukowana na zamówienie. Nie produkuje się jej seryjnie. 
+                    <div style="text-align:center;">
+                        <a href="https://www.puzzlemaster.ca/browse/cubepuzzle/otherrubiks/12019-huanglong-17x17x17-cube-stickerless" target="_blank">
+                            <button type="button" class="btn">Źródło</button></a> 
+                    </div>
+                </figcaption>
+        </figure>
+
+        <figure>
+            <img src="img/petamix.png" alt="Największa kostka dwunastościenna" width="400" height="400" id="dwunastoscienna">
+                <figcaption class="styl">Petamix - największa kostka dwunastościenna
+                    <div style="text-align:center;"><br>
+                        <a href="https://www.amazon.com/Petaminx-Layered-Megaminx-Dodecahedron-Sticker/dp/B00D0LDCW4" target="_blank">
+                            <button type="button" class="btn">Źródło</button></a> 
+                    </div>
+                </figcaption>
+        </figure>
+    </div>
+
+    <br><br><br><br><br>
+
+    <h1 class="text-center" id="zmiennoksztaltne">Kostki zmiennokształtne</h1>
+    <br><br><br>
+
+    <div class="row" style="width:100%">
+        <figure class="col-md-6" style="text-align:center;">
+            <img src="img/miror_cube.png" alt="mirror cube" width="400" height="400">
+                <figcaption class="styl">Mirror cube - jednokolorwa, zmieniająca kształt
+                    <div style="text-align:center;"><br>
+                        <a href="img/miror_cube.png" target="_blank">
+                            <button type="button" class="btn">Powiększ</button></a> 
+                    </div>
+                </figcaption>
+        </figure>
+
+        
+        <figure class="col-md-6" style="text-align:center;">
+            <img src="img/axis_cube.png" alt="axis cube" width="400" height="400">
+                <figcaption class="styl">Axis cube - wielokolorowa, zmieniająca kształt
+                    <div style="text-align:center;"><br>
+                        <a href="https://www.britcubes.co.uk/store/p35/qiyi-axis-cube.html" target="_blank">
+                            <button type="button" class="btn">Źródło</button></a> 
+                    </div>
+                </figcaption>
+        </figure>
+
+    </div>
+</section>
+
+            
+                <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            
+                <script src="libraries/js/bootstrap.min.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script src="libraries/js/jquery-3.4.1.js"></script>
+                <script src="czas.js"> </script>
+
+                <script>
+                    $(function() {
+                    $("#klik").click(function() {
+                        $("#figura_kolekcja").slideDown();
+                    });
+                    });
+                </script>
+
+</body>
+
+</html>

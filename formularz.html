@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            
+    <title>Strona o kostkach Rubika</title>
+    <meta name="description" content="Strona o kostkach Rubika">
+    <meta name="keywords" content="kostka Rubika, układanie, speedcubing">
+    <meta name="author" content="Wiktor Dereń" />
+            
+    <link rel="stylesheet" href="libraries/css/bootstrap.min.css">
+    <link rel="Stylesheet" href="style.css">        <!--link do pliku css --> 
+    <link rel="Shortcut icon" href="img/proba.png" /> <!--zdjęcie zakładki--> 
+
+</head>
+<body onload="odliczanie();">
+        <div id="zegar"></div> 
+        
+        <header>
+                <nav class="navbar navbar-dark bg-cube navbar-expand-lg">
+        
+                    <a class="navbar-brand" href="index.html" id="center" title="Strona domowa"><img src="img/proba.png"  alt="zdjecie strony domowej" width="30" height="30" class="d-inline-block align-middle"></a>
+                         
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przycisk nawigacji">  
+                            <span class="navbar-toggler-icon"></span>
+                     </button>
+        
+                     <div class="collapse navbar-collapse" id="mainmenu">
+        
+                        <ul class="navbar-nav">
+        
+                            <li class="navbar-item">
+                                <a class="navbar-link" title="Strona o kostkach Rubika" href="index.html">Start </a>
+                            </li>
+        
+                            <li class="navbar-item">
+                                <a class="navbar-link" title="Historia kostki Rubika" href="historia.html">Historia </a>
+                            </li>
+        
+                            <li class="navbar-item">
+                                <a class="navbar-link" title="Techniki układania kostki Rubika"  href="techniki_ukladania.html"> Techniki </a>
+                            </li>
+        
+                            <li class="navbar-item">
+                                <a class="navbar-link" title="Rodzaje kostek Rubika" href="rodzaje_kostek.html"> Rodzaje </a>
+                            </li>
+        
+                            <li class="navbar-item">
+                                <a class="navbar-link" title="Ciekawostki o kostce Rubika" href="ciekawostki.html"> Ciekawostki</a>
+                            </li>
+        
+                            <li class="navbar-item dropdown">
+                                <a class="navbar-link dropdown-toggle" title="Galeria kostek Rubika" href="galeria.html" data-toggle="dropdown" role="button" aria-expanded="false" id="submenu" aria-haspopup="true"> Galeria</a>
+        
+                            <div class="dropdown-menu" aria-labelledby="submenu">
+                                 <a class="dropdown-item" href="galeria.html">Galeria</a>
+                                <a class="dropdown-item" href="galeria.html#kolekcja">Moja kolekcja</a>
+                                <a class="dropdown-item" href="galeria.html#najwieksze"> Największe kostki</a>
+                                <a class="dropdown-item" href="galeria.html#zmiennoksztaltne"> Kostki zmiennokształtne</a>
+        
+                            </div>
+        
+                            </li>
+        
+                            <li class="navbar-item">
+                                <a class="navbar-link" title="Zaloguj" href="formularz.html"> Zaloguj</a>
+                            </li>
+                        </ul>
+                     </div>
+                    
+                    </nav>
+            </header>
+                
+        <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Speedcuber</h1>
+                <h2>Kwestionariusz danych osobowych</h2>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <form id="formulando">
+        <div class="form-group">
+            <input type="imię" class="form-control" id="imięInput" aria-describedby="ImięHelp" placeholder="Imię">
+        </div>
+
+        <div class="form-group">
+            <input type="nazwisko" class="form-control" id="nazwiskoInput" aria-describedby="nazwiskoHelp" placeholder="Nazwisko">
+        </div>
+
+        <div class="row text-center justify-content-center"> 
+            <select class="browser_default custom-select" id="płećInput">
+                <option selected>Płeć</option>
+                <option value="1">Mężczyzna</option>
+                <option value="2" onclick="pokaz()">Kobieta</option>
+            </select>
+        </div> <br>
+
+        <div class="form-group">
+            <input type="nazwisko" class="form-control" id="papieńskieInput" aria-describedby="panieńskieHelp" placeholder="Nazwisko panieńskie">
+        </div>
+
+        <div class="form-group">
+            <input type="email" class="form-control" id="emailInput" aria-describedby="emailkoHelp" placeholder="Email">
+        </div>
+
+        <div class="form-group">
+            <input type="password" class="form-control" id="hasłoInput" aria-describedby="hasłoHelp" placeholder="Hasło">
+        </div>
+
+        <div class="text-center">
+            <button type="reset" class="btn btn-warning">Wyczyść</button>
+    </div>  <br>
+
+        <div class="text-center">
+                <button type="button" class="btn btn-warning">Zaloguj</button>
+        </div>
+
+
+
+        </form>
+
+                    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+                    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+                
+                    <script src="libraries/js/bootstrap.min.js"></script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="libraries/js/jquery-3.4.1.js"></script>
+                    <script src="czas.js"> </script>
+</body>
+</html>
+<script>
+    $(function pokaz(){
+        var wybor1 = document.getElementById("#płećInput").value;
+        var wybor2 = wybor1.value;
+        if(wybor2 == "kobieta"){
+            $("#panienskie").slideDown();
+            location.reload();
+        }
+    });
+</script>
